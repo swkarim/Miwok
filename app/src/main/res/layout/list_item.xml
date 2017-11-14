@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_item_height">
+
+    <ImageView
+        android:id="@+id/list_item_icon"
+        android:layout_width="@dimen/list_item_height"
+        android:layout_height="@dimen/list_item_height"
+        android:paddingLeft="16dp"
+        android:background="@color/tan_background"
+        />
+
+    <LinearLayout
+        android:id="@+id/word_container_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TextStyle"
+            android:id="@+id/miwokTextView"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:textStyle="bold"
+            tools:text="lutti"/>
+
+        <TextView
+            style="@style/TextStyle"
+            android:id="@+id/defaultTextView"
+            android:layout_weight="1"
+            tools:text="one"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/play_button_container"
+        android:layout_width="wrap_content"
+        android:layout_height="88dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingRight="16dp"
+            android:src="@drawable/ic_play_arrow_white_24dp"
+            />
+    </LinearLayout>
+</LinearLayout>
